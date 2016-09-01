@@ -138,9 +138,9 @@ Each `car` has 6 properties:
 
 Let's make sure our tools are working correctly.
 
-* [ ] Have your `toolbelt.loop` log each value in a test array to the console.
+* [x] Have your `toolbelt.loop` log each value in a test array to the console.
 
-* [ ] Have your `toolbelt.transform` multiply each number in a testArray by 5.
+* [x] Have your `toolbelt.transform` multiply each number in a testArray by 5.
 
 
 ## Back-End Data Parsers:
