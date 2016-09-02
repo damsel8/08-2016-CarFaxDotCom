@@ -67,6 +67,37 @@ database.currentYears = yearParser(carData);
 database.test = testArray
 console.log(database.currentYears);
 
+//model:  output equals average age, fake output of 10 years,
+ var sampleInput = [7, 6, 10, 2, 20] 
+// var average age = 10 
+
+//pseudocode: 
+//go thru the ages, add them up as sum, and divide by # of elements (or length of array)
+
+//build:
+
+var averageYearCalculator = function (ageList){
+	var sum = 0;
+	toolbelt.loop (ageList, function(age){
+		sum = sum + age;
+		
+		console.log(sum);
+	
+	})
+	
+	return (sum/ageList.length);
+
+}
+
+console.log(averageYearCalculator(sampleInput));
+
+
+
+
+
+
+
+
 
 
 
