@@ -80,18 +80,29 @@ var averageYearCalculator = function (ageList){
 	var sum = 0;
 	toolbelt.loop (ageList, function(age){
 		sum = sum + age;
-		
-		console.log(sum);
-	
 	})
-	
 	return (sum/ageList.length);
-
-}
+};
 
 console.log(averageYearCalculator(sampleInput));
 
-
+var filterByColor = function(carList, inputColor){
+//take in a car list and a color
+//create empty output list
+var colorMatch =[];
+//iterate through car list
+toolbelt.transform(carList, function(car){
+	toolbelt.loop(car, function(value, key){
+		if (key==='color' && value === inputColor){
+			colorMatch.push(car);
+		}
+	})	
+	return colorMatch;
+})
+//if input color matches car color then add the car to our output list
+//return the output list of car objects whose color matches input color
+};
+console.log(filterByColor(carData, 'black'));
 
 
 
